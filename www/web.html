@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="web.css">
+  <title>Extra features</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+<!--      <div class="container">
+        <h1>Print QR Code</h1>
+          <h3>Thermal printer</h3>
+            <form class="form-inline" role="form" method="post" action="qr.php">
+              <div class="form-group">
+                <label>QR</label>
+                <p>Print a QR code sticker </p>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="QR" placeholder="Text">
+              </div>
+              <button type="submit" class="hidden-xs btn btn-primary btn-md" name="PLAY">Print</button>
+              <div class="visible-xs-block text-center">
+              <br>
+              <button type="submit" class="btn btn-primary btn-lg" name="PLAY">Print</button>
+              </div>
+            </form>
+          </div>
+          </div>-->
+    <div class="container">
+      <div class="starter-template">
+        <h1>QR code printer</h1>
+           <form method="post" action="web-qr.php">
+            <p class="lead">Print a QR code sticker: <br> <input type="text" name="QR" size="17" placeholder=" " autofocus></p>
+	          <p><input type="submit" class="btn btn-default btn-lg" value="Printer"/></p>
+          </form>
+      </div>
+    </div>
+    </body>
+    </html>

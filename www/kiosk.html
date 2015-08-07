@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="kiosk.css">
+  <title>QR Printer kiosk mode</title>
+    </head>
+    <body>
+    <div class="container">
+      <div class="starter-template">
+        <h1>QR code printer</h1>
+           <form method="post" action="qr-kiosk.php">
+            <h3 class="lead">Print a QR code sticker: </h3> 
+            <div class="col-md-10 col-md-offset-1"><input type="text" class="form-control input-lg col-md-4" name="QR" size="17" placeholder=" Type here" autofocus autocomplete="off" spellcheck="false"></div>
+	    <h3><input type="submit" class="btn btn-default btn-lg" value="Push Enter to print!" id="qr-submit" onclick="this.value='Printing...'"/></h3>
+          </form>
+      </div>
+    </div>
+    </body>
+    </html>
