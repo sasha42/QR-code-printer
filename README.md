@@ -2,7 +2,14 @@
 Raspberry Pi based QR code printer, based on Tornado and the Brother QL line of thermal sticker printers. The first version of this codebase was based on some scrappy php and bash.
 
 ## Installation
-Copy the files from `www` into the root of your web server, and copy `scripts` into the root of your Pi. Make sure to set the permissions correctly, as that is what usually breaks. You will need to run `make` in order to use the `ql570` library.
+Copy the files from `www` into the root of your web server, and copy `scripts` into the root of your Pi. Make sure to set the permissions correctly, as that is what usually breaks (particularly for the files in the `scripts` directory, as well as the `/dev/usb/lp0` device). 
+
+### Printer library
+Install the neccesary dependencies:
+```bash
+sudo aptitude install build-essential libpng12-0 libpng12-dev pkg-config
+```
+You will then need to run `make` in order to use the `ql570` library (in the `scripts/ql570` directory).
 
 ### autostart file
 Make sure that your `/etc/xdg/lxsession/LXDE/autostart` file on your Raspberry Pi looks something like this:

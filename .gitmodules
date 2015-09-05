@@ -1,0 +1,3 @@
+[submodule "scripts/ql570"]
+	path = scripts/ql570
+	url = git@github.com:sudomesh/ql570.git
