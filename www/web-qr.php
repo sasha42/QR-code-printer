@@ -27,6 +27,6 @@ die ("Go back and, try again. Kill will ignore the input.");
 
 <?php
 ob_start();
-system('/scripts/qr.sh '.escapeshellarg($_SERVER['HTTP_USER_AGENT']) .escapeshellarg('|') .escapeshellarg($_SERVER['REMOTE_ADDR']) .escapeshellarg('|qr|') .escapeshellarg($LANG) .escapeshellarg('|') .escapeshellarg($PLAY));
+system('/scripts/qr.py '.escapeshellarg($_SERVER['HTTP_USER_AGENT']) .escapeshellarg('|') .escapeshellarg($_SERVER['REMOTE_ADDR']) .escapeshellarg('|qr|') .escapeshellarg($PLAY));
 ob_end_clean();
 ?>
