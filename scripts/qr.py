@@ -7,8 +7,8 @@ import subprocess
 import datetime
 
 # Set variables
-string = sys.stdin.read()
-qr_data = string.split("|")[4]
+string = str(sys.argv)
+qr_data = sys.argv[1].split("|")[3]
 time = datetime.datetime.now().strftime("%Y-%m-%d|%H:%M:%S|")
 
 # Create and print QR
@@ -19,4 +19,4 @@ subprocess.call(["/scripts/ql570/ql570", "/dev/usb/lp0", "w", "/scripts/qrcode.p
 
 # Log what happened
 with open("/var/www/printlog", "a") as logfile:
-    logfile.write(time + string)
+    logfile.write(time + sys.argv[1] + "\n")
